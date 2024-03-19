@@ -30,12 +30,20 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextSoB = findViewById(R.id.editB);
         EditText editTextSoKQ = findViewById(R.id.editKQ);
 
-        // Lấy dữ liệu về từ điều khiển số a
+        // Lấy dữ liệu về ở điều khiển số a
         String strA = editTextSoA.getText().toString();
-        // Lấy dữ liệu về từ điều khiển số b
+        // Lấy dữ liệu về ở điều khiển số b
         String strB = editTextSoB.getText().toString();
-        // Lấy dữ liệu về từ điều khiển số a
-        String strKQ = editTextSoKQ.getText().toString();
 
+        // Chuyển dữ liệu sang dạng số
+        int soA = Integer.parseInt(strA);
+        int soB = Integer.parseInt(strB);
+
+        // Tính tổng theo yêu cầu
+        int tong = soA + soB;
+        String strTong = String.valueOf(tong); // Chuyển tong sang dạng chuỗi
+
+        // Hiện thị ra màn hình
+        editTextSoKQ.setText(strTong);
     }
 }
