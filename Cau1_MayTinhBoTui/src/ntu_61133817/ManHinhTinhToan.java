@@ -11,13 +11,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.JLabel;
 
 public class ManHinhTinhToan extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField value2;
+	private JTextField value1;
 
 	/**
 	 * Launch the application.
@@ -52,11 +53,21 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(editorPane);
 		
 		JButton btnNewButton = new JButton("9");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+9);
+			}
+		});
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton.setBounds(10, 125, 77, 47);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("6");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+6);
+			}
+		});
 		btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_1.setBounds(10, 182, 77, 46);
 		contentPane.add(btnNewButton_1);
@@ -67,6 +78,11 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_2);
 		
 		JButton btnNewButton_4 = new JButton("8");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+8);
+			}
+		});
 		btnNewButton_4.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_4.setBounds(96, 125, 77, 47);
 		contentPane.add(btnNewButton_4);
@@ -87,6 +103,11 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_3_1);
 		
 		JButton btnNewButton_5 = new JButton("7");
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+7);
+			}
+		});
 		btnNewButton_5.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_5.setBounds(183, 125, 77, 47);
 		contentPane.add(btnNewButton_5);
@@ -126,14 +147,18 @@ public class ManHinhTinhToan extends JFrame {
 		btnNewButton_3_3.setBounds(270, 295, 77, 47);
 		contentPane.add(btnNewButton_3_3);
 		
-		textField = new JTextField();
-		textField.setBounds(10, 59, 330, 39);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		value2 = new JTextField();
+		value2.setBounds(10, 59, 331, 39);
+		contentPane.add(value2);
+		value2.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(164, 20, 178, 29);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		value1 = new JTextField();
+		value1.setBounds(164, 20, 178, 29);
+		contentPane.add(value1);
+		value1.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(10, 352, 90, 47);
+		contentPane.add(lblNewLabel);
 	}
 }
