@@ -234,6 +234,13 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(action);
 		
 		JButton btnNewButton_3 = new JButton("C");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value1.setText(null);
+				value2.setText(null);
+				
+			}
+		});
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_3.setBounds(225, 352, 118, 47);
 		contentPane.add(btnNewButton_3);
