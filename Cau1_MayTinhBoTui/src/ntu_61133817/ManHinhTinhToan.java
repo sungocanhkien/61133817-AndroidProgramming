@@ -162,17 +162,17 @@ public class ManHinhTinhToan extends JFrame {
 					int sub = one-two;
 						value2.setText(String.valueOf(sub));
 				}
-				if(action.getText().equals("sub")) {
-					int sub = one-two;
-						value2.setText(String.valueOf(sub));
+				if(action.getText().equals("add")) {
+					int add = one-two;
+						value2.setText(String.valueOf(add));
 				}
-				if(action.getText().equals("sub")) {
-					int sub = one-two;
-						value2.setText(String.valueOf(sub));
+				if(action.getText().equals("mul")) {
+					int mul = one-two;
+						value2.setText(String.valueOf(mul));
 				}
-				if(action.getText().equals("sub")) {
-					int sub = one-two;
-						value2.setText(String.valueOf(sub));
+				if(action.getText().equals("div")) {
+					int div = one-two;
+						value2.setText(String.valueOf(div));
 				}
 			}
 		});
