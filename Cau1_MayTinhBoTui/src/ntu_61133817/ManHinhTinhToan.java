@@ -154,6 +154,16 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_2_2);
 		
 		JButton btnNewButton_3_2 = new JButton("=");
+		btnNewButton_3_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int one=Integer.parseInt(value1.getText());
+				int two=Integer.parseInt(value2.getText());
+				if(action.getText().equals("sub")) {
+					int sub = one-two;
+						value2.setText(String.valueOf(sub));
+				}
+			}
+		});
 		btnNewButton_3_2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_3_2.setBounds(183, 295, 77, 47);
 		contentPane.add(btnNewButton_3_2);
@@ -171,16 +181,37 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_6);
 		
 		JButton btnNewButton_1_3 = new JButton("+");
+		btnNewButton_1_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value1.setText(value2.getText());
+				action.setText("add");
+				value2.setText(null);
+			}
+		});
 		btnNewButton_1_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_1_3.setBounds(270, 182, 77, 46);
 		contentPane.add(btnNewButton_1_3);
 		
 		JButton btnNewButton_2_3 = new JButton("*");
+		btnNewButton_2_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value1.setText(value2.getText());
+				action.setText("mul");
+				value2.setText(null);
+			}
+		});
 		btnNewButton_2_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_2_3.setBounds(270, 238, 77, 47);
 		contentPane.add(btnNewButton_2_3);
 		
 		JButton btnNewButton_3_3 = new JButton("/");
+		btnNewButton_3_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value1.setText(value2.getText());
+				action.setText("div");
+				value2.setText(null);
+			}
+		});
 		btnNewButton_3_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_3_3.setBounds(270, 295, 77, 47);
 		contentPane.add(btnNewButton_3_3);
@@ -198,6 +229,7 @@ public class ManHinhTinhToan extends JFrame {
 		value1.setColumns(10);
 		
 		action = new JLabel("");
+		action.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 		action.setBounds(10, 352, 110, 47);
 		contentPane.add(action);
 		
