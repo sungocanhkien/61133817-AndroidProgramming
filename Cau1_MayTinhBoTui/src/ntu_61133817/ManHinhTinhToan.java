@@ -10,11 +10,14 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+import javax.swing.JTextField;
 
 public class ManHinhTinhToan extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -98,24 +101,39 @@ public class ManHinhTinhToan extends JFrame {
 		btnNewButton_2_2.setBounds(183, 238, 77, 47);
 		contentPane.add(btnNewButton_2_2);
 		
-		JButton btnNewButton_3_2 = new JButton("New button");
+		JButton btnNewButton_3_2 = new JButton("=");
+		btnNewButton_3_2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_3_2.setBounds(183, 295, 77, 47);
 		contentPane.add(btnNewButton_3_2);
 		
-		JButton btnNewButton_6 = new JButton("New button");
+		JButton btnNewButton_6 = new JButton("-");
+		btnNewButton_6.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_6.setBounds(270, 125, 77, 47);
 		contentPane.add(btnNewButton_6);
 		
-		JButton btnNewButton_1_3 = new JButton("New button");
+		JButton btnNewButton_1_3 = new JButton("+");
+		btnNewButton_1_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_1_3.setBounds(270, 182, 77, 46);
 		contentPane.add(btnNewButton_1_3);
 		
-		JButton btnNewButton_2_3 = new JButton("New button");
+		JButton btnNewButton_2_3 = new JButton("*");
+		btnNewButton_2_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_2_3.setBounds(270, 238, 77, 47);
 		contentPane.add(btnNewButton_2_3);
 		
-		JButton btnNewButton_3_3 = new JButton("New button");
+		JButton btnNewButton_3_3 = new JButton("/");
+		btnNewButton_3_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_3_3.setBounds(270, 295, 77, 47);
 		contentPane.add(btnNewButton_3_3);
+		
+		textField = new JTextField();
+		textField.setBounds(10, 59, 330, 39);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(164, 20, 178, 29);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
 	}
 }
