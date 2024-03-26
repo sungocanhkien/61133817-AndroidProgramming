@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -88,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn đang ở béo phì cấp độ III");
                     }
+                }else {
+                    Toast.makeText(getApplicationContext(), "")
                 }
             }
         });
