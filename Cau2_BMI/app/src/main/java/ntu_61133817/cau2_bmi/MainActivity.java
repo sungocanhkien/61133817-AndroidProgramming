@@ -38,7 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 double HchieuCao = Double.parseDouble(chieuCao.getText().toString())/100;
                 double HcanNang = Double.parseDouble(canNang.getText().toString());
                 chiSo = Math.round((HcanNang/Math.pow(HchieuCao,2))*10.0)/10.0;
-                
+                if(nam.isChecked()){
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                }
             }
         });
     }
