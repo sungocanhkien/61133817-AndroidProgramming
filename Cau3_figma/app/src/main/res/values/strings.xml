@@ -1,3 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Cau3_figma</string>
+	<!-- android_large___1 strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="anh_ki_n_string">Anh Kin</string>
+	<string name="_nh_c_a_t_i_string">nh ca ti </string>
+	<string name="kho_kho_nh_kh_c_string">Kho khonh khc </string>
+	<string name="c_p_nh_t_gi_i_thi_u_b_n_th_n_string">Cp nht gii thiu bn thn</string>
+	<string name="b_n__ang_ngh__g___string">Bn ang ngh g?</string>
+	<string name="_5_string">5</string>
+	<string name="_0_string">0</string>
+	<string name="_17_string">17</string>
+	<string name="_4_string">4</string>
+	<string name="_28_th_ng_3__2021_string">28 thng 3, 2021</string>
 </resources>
