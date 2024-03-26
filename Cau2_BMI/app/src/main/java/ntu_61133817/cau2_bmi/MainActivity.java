@@ -68,20 +68,20 @@ public class MainActivity extends AppCompatActivity {
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
                     }
-                    if(chiSo>=18.5 && chiSo <= 24.9){
+                    if(chiSo>=18.5 && chiSo <= 22.9){
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn có chỉ số BMI bình thường");
                     }
-                    if(chiSo == 25){
+                    if(chiSo == 23){
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn bị thừa cân");
-                    }if(chiSo > 25 && chiSo <= 29.9){
+                    }if(chiSo > 23 && chiSo <= 24.9){
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn đang ở giai đoạn tiền béo phì/béo phì mức độ thấp");
-                    }if(chiSo >= 30 && chiSo <= 34.9){
+                    }if(chiSo >= 25 && chiSo <= 29.9){
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn đang ở béo phì cấp độ I");
-                    }if(chiSo >= 35 && chiSo <= 39.9){
+                    }if(chiSo >= 30 && chiSo <= 39.9){
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn đang ở béo phì cấp độ II");
                     }if(chiSo == 40){
