@@ -43,6 +43,32 @@ public class MainActivity extends AppCompatActivity {
                         ketqua.setText(String.valueOf(chiSo));
                         nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
                     }
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                    if(chiSo<18.5){
+                        ketqua.setText(String.valueOf(chiSo));
+                        nhanxet.setText("Bạn cần bổ sung thêm dinh dưỡng");
+                    }
+                }else if(nu.isChecked()){
+
                 }
             }
         });
