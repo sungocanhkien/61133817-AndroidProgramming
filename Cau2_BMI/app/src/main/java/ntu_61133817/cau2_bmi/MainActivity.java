@@ -1,6 +1,7 @@
 package ntu_61133817.cau2_bmi;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -28,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
         nam = findViewById(R.id.nam);
         nu = findViewById(R.id.nu);
         Tinhbmi=findViewById(R.id.bmi);
-        ketqua = findViewById(R.)
+        ketqua = findViewById(R.id.ketqua);
+        nhanxet = findViewById(R.id.nhanxet);
+
+        Tinhbmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double HchieuCao = Double.parseDouble(chieuCao.getText().toString())/100;
+                double HcanNang = Double.parseDouble(canNang.getText().toString());
+                chiSo = Math.round((HcanNang/Math.pow(HchieuCao,2))*10.0)/10.0;
+                
+            }
+        });
     }
 }
