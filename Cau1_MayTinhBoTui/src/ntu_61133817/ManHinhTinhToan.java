@@ -163,15 +163,15 @@ public class ManHinhTinhToan extends JFrame {
 						value2.setText(String.valueOf(sub));
 				}
 				if(action.getText().equals("add")) {
-					int add = one-two;
+					int add = one+two;
 						value2.setText(String.valueOf(add));
 				}
 				if(action.getText().equals("mul")) {
-					int mul = one-two;
+					int mul = one*two;
 						value2.setText(String.valueOf(mul));
 				}
 				if(action.getText().equals("div")) {
-					int div = one-two;
+					int div = one/two;
 						value2.setText(String.valueOf(div));
 				}
 			}
