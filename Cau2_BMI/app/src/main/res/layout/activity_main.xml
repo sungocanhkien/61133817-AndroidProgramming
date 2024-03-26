@@ -63,7 +63,28 @@
             android:text="Giới Tính"
             android:layout_marginLeft="50dp"
             android:textSize="25dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
 
+            <RadioButton
+                android:id="@+id/nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Nam"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"
+                android:text="Nữ"/>
+        </RadioGroup>
     </LinearLayout>
 
 </LinearLayout>
