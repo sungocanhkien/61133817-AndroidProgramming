@@ -162,6 +162,18 @@ public class ManHinhTinhToan extends JFrame {
 					int sub = one-two;
 						value2.setText(String.valueOf(sub));
 				}
+				if(action.getText().equals("sub")) {
+					int sub = one-two;
+						value2.setText(String.valueOf(sub));
+				}
+				if(action.getText().equals("sub")) {
+					int sub = one-two;
+						value2.setText(String.valueOf(sub));
+				}
+				if(action.getText().equals("sub")) {
+					int sub = one-two;
+						value2.setText(String.valueOf(sub));
+				}
 			}
 		});
 		btnNewButton_3_2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
