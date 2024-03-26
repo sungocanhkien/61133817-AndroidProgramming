@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 public class ManHinhTinhToan extends JFrame {
 
@@ -73,6 +74,11 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("3");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+3);
+			}
+		});
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_2.setBounds(10, 238, 77, 47);
 		contentPane.add(btnNewButton_2);
@@ -88,16 +94,31 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_4);
 		
 		JButton btnNewButton_1_1 = new JButton("5");
+		btnNewButton_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+5);
+			}
+		});
 		btnNewButton_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_1_1.setBounds(96, 182, 77, 46);
 		contentPane.add(btnNewButton_1_1);
 		
 		JButton btnNewButton_2_1 = new JButton("2");
+		btnNewButton_2_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+2);
+			}
+		});
 		btnNewButton_2_1.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_2_1.setBounds(96, 238, 77, 47);
 		contentPane.add(btnNewButton_2_1);
 		
 		JButton btnNewButton_3_1 = new JButton("0");
+		btnNewButton_3_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+0);
+			}
+		});
 		btnNewButton_3_1.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_3_1.setBounds(10, 295, 163, 47);
 		contentPane.add(btnNewButton_3_1);
@@ -113,11 +134,21 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_5);
 		
 		JButton btnNewButton_1_2 = new JButton("4");
+		btnNewButton_1_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+4);
+			}
+		});
 		btnNewButton_1_2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_1_2.setBounds(183, 182, 77, 46);
 		contentPane.add(btnNewButton_1_2);
 		
 		JButton btnNewButton_2_2 = new JButton("1");
+		btnNewButton_2_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value2.setText(value2.getText()+1);
+			}
+		});
 		btnNewButton_2_2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_2_2.setBounds(183, 238, 77, 47);
 		contentPane.add(btnNewButton_2_2);
@@ -128,6 +159,13 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_3_2);
 		
 		JButton btnNewButton_6 = new JButton("-");
+		btnNewButton_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				value1.setText(value2.getText());
+				action.setText("sub");
+				value2.setText(null);
+			}
+		});
 		btnNewButton_6.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		btnNewButton_6.setBounds(270, 125, 77, 47);
 		contentPane.add(btnNewButton_6);
@@ -148,17 +186,25 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_3_3);
 		
 		value2 = new JTextField();
+		value2.setHorizontalAlignment(SwingConstants.RIGHT);
 		value2.setBounds(10, 59, 331, 39);
 		contentPane.add(value2);
 		value2.setColumns(10);
 		
 		value1 = new JTextField();
+		value1.setHorizontalAlignment(SwingConstants.RIGHT);
 		value1.setBounds(164, 20, 178, 29);
 		contentPane.add(value1);
 		value1.setColumns(10);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(10, 352, 90, 47);
-		contentPane.add(lblNewLabel);
+		action = new JLabel("");
+		action.setBounds(10, 352, 110, 47);
+		contentPane.add(action);
+		
+		JButton btnNewButton_3 = new JButton("C");
+		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		btnNewButton_3.setBounds(225, 352, 118, 47);
+		contentPane.add(btnNewButton_3);
 	}
+	private JLabel action;
 }
