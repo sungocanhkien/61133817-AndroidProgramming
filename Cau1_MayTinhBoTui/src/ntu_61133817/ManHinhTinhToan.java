@@ -238,7 +238,7 @@ public class ManHinhTinhToan extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				value1.setText(null);
 				value2.setText(null);
-				
+				action.setText(null);
 			}
 		});
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 35));
