@@ -90,7 +90,8 @@ public class MainActivity extends AppCompatActivity {
                         nhanxet.setText("Bạn đang ở béo phì cấp độ III");
                     }
                 }else {
-                    Toast.makeText(getApplicationContext(), "")
+                    Toast.makeText(getApplicationContext(), "Vui lòng chọn giới tính!",
+                            Toast.LENGTH_LONG).show();
                 }
             }
         });
