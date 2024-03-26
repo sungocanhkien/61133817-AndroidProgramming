@@ -229,12 +229,14 @@ public class ManHinhTinhToan extends JFrame {
 		contentPane.add(btnNewButton_3_3);
 		
 		value2 = new JTextField();
+		value2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		value2.setHorizontalAlignment(SwingConstants.RIGHT);
 		value2.setBounds(10, 59, 331, 39);
 		contentPane.add(value2);
 		value2.setColumns(10);
 		
 		value1 = new JTextField();
+		value1.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		value1.setHorizontalAlignment(SwingConstants.RIGHT);
 		value1.setBounds(164, 20, 178, 29);
 		contentPane.add(value1);
